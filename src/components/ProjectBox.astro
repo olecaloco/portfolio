@@ -1,0 +1,8 @@
+---
+const { class: className, link, imageSrc } = Astro.props;
+---
+<a href={link} target="_blank">
+    <div class:list={["flex items-center bg-gray-200 p-4 rounded shadow-sm", className]}>
+        <img class="h-10" src={imageSrc} />
+    </div>
+</a>
